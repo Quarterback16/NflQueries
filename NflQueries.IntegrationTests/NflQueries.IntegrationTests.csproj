@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameLogTests.cs" />
+    <Compile Include="GamesTests.cs" />
+    <Compile Include="InjuriesTests.cs" />
+    <Compile Include="RosterTests.cs" />
     <Compile Include="TeamsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

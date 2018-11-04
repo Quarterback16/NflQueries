@@ -9,6 +9,8 @@ namespace StattleShip.NflApi
 	{
 		public List<TeamDto> Teams { get; set; }
 		public List<LeagueDto> Leagues { get; set; }
+		public List<GameDto> Games { get; set; }
+		public List<PlayerDto> Players { get; set; }
 
 		public HttpWebRequest CreateRequest(
 			string apiRequest,

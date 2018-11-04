@@ -108,13 +108,23 @@
     },
     {
       "id": "0fc8a1cb-bb61-4eba-b448-1d313813f0d1",
-      "created_at": "2015-11-28T22:
-      33:
-      56-05:
-      00","updated_at":"2016-08-16T03:
-      55:
-      51-04: 00","abbreviation":"JAC","color":"000000
-      ","colors":["000000","006778","9F792C","D7A22A"],"hashtag":"Jaguars","hashtags":["Jaguars","MoreJax"],"location":"Jacksonville","name":"Jacksonville","nickname":"Jaguars","latitude":30.3321838,"longitude":-81.655651,"slug":"nfl-jac","division_id":"a83ba728-0bd9-4b46-8a19-64515e176c00","league_id":"ebb52980-4b25-4384-bb32-26d354568f0c"},{"id":"3a857729-4c8c-4dde-9cad-359cab5990de","created_at":"2015-11-28T22:
+      "created_at": "2015-11-28T22:33:56-05:00",
+      "updated_at": "2016-08-16T03:55:51-04: 00",
+      "abbreviation": "JAC",
+      "color": "000000",
+      "colors": [ "000000", "006778", "9F792C", "D7A22A" ],
+      "hashtag": "Jaguars",
+      "hashtags": [ "Jaguars", "MoreJax" ],
+      "location": "Jacksonville",
+      "name": "Jacksonville",
+      "nickname": "Jaguars",
+      "latitude": 30.3321838,
+      "longitude": -81.655651,
+      "slug": "nfl-jac",
+      "division_id": "a83ba728-0bd9-4b46-8a19-64515e176c00",
+      "league_id": "ebb52980-4b25-4384-bb32-26d354568f0c"
+    },
+    {"id":"3a857729-4c8c-4dde-9cad-359cab5990de","created_at":"2015-11-28T22:
       33:
       56-05:
       00","updated_at":"2016-08-16T03:
@@ -553,13 +563,63 @@
       "season_id": "863d0345-407a-4881-8fa4-c1ef069f7482",
       "team_id": "82fedbfa-8c2c-46cc-b02f-ea16abf5ffc9"
     },
-    {"id":"8e6aefeb-0bd1-4c9d-b276-6e2bfa19abaf","created_at":"2017-11-09T06:
-      09:
-      19-05: 00","updated_
-      at":"2017-11-09T06:
-      09:
-      20-05: 00","interval_type":"week","statistics_on":"2017-11-09","games_lost":4,"games_played":8,"games_tied":0,"games_won":4,"defense_assisted_tackles":99,"defense_blocked_kicks":1,"defense_combined_tackles":499,"defense_forced_fumbles":7,"defense_fumbles_recovered":7,"defense_fumble_touchdowns":0,"defense_interceptions":6,"defense_interceptions_longest":21,"defense_interceptions_touchdowns":1,"defense_interceptions_yards":49,"defense_misc_assists":0,"defense_misc_combined_tackles":4,"defense_misc_forced_fumbles":0,"defense_misc_fumbles_recovered":4,"defense_misc_tackles":4,"defense_passes_defensed":30,"defense_quarterback_hit":36,"defense_sacks":13,"defense_sack_yards":107,"defense_safeties":0,"defense_safeties_1pt":0,"defense_special_teams_assists":3,"defense_special_teams_combined_tackles":28,"defense_special_teams_force_fumbles":0,"defense_special_teams_fumbles_recovered":1,"defense_special_teams_tackle":25,"defense
-      _tackles":400,"defense_tackles_for_loss":42,"extra_point_attempts":21,"extra_points_blocked":0,"extra_point_made":19,"extra_point_pct":90.476,"field_goal_attempts":10,"field_goal_attempts_19":0,"field_goal_attempts_29":5,"field_goal_attempts_39":2,"field_goal_attempts_49":2,"field_goal_attempts_50":1,"field_goal_longest_yards":46,"field_goal_made":8,"field_goal_made_19":0,"field_goal_made_29":5,"field_goal_made_39":1,"field_goal_made_49":2,"field_goal_made_50":0,"field_goal_pct":80.0,"first_downs":165,"first_down_passes":99,"first_down_penalties":19,"first_down_rushes":47,"fourth_down_attempts":10,"fourth_down_conversions":7,"fourth_down_passes":6,"fourth_down_pct":70.0,"fourth_down_penalties":0,"fourth_down_rushes":1,"fumbles_forced":7,"fumbles":7,"fumbles_lost":2,"fumbles_out_of_bounds":1,"fumbles_opponent_recovered":8,"fumbles_opponent_recovered_touchdowns":0,"fumbles_opponent_recovered_yards":64,"fumbles_own_recovered":4,"fumbles_o wn_recovered_touchdowns":0,"fumbles_own_recovered_yards":-6,"goal_to_go_attempts":18,"goal_to_go_pct":77.778,"goal_to_go_touchdowns":14,"kick_return_avg_yards":21.154,"kick_return_fair_catches":0,"kick_return_longest_yards":29,"kick_return_returns":13,"kick_return_touchdowns":0,"kick_return_yards":275,"kick_return_yards_10_plus":4,"kick_return_yards_20_plus":8,"kick_return_yards_30_plus":0,"kick_return_yards_40_plus":0,"kick_return_yards_50_plus":0,"kickoff_avg":65.135,"kickoff_avg_return_yards":69.769,"kickoff_endzone":29,"kickoff_inside_20":3,"kickoff_inside_20_pct":8.108,"kickoff_kicks":37,"kickoff_longest_yards":74,"kickoff_net_avg_yards":40.622,"kickoff_net_yards":1503,"kickoff_returns":13,"kickoff_return_yards":907,"kickoff_touchbacks":24,"kickoff_touchback_pct":64.865,"kickoff_yards":2410,"pass_attempts":290,"pass_avg_yards":6.462,"pass_completions":185,"pass_completion_avg_yards":10.13,"pass_completion_pct":63.793,"pass_first_downs": 102,
+    {     
+      "id": "8e6aefeb-0bd1-4c9d-b276-6e2bfa19abaf",
+      "interval_type": "week",
+      "statistics_on": "2017-11-09",
+      "games_lost": 4,
+      "games_played": 8,
+      "games_tied": 0,
+      "games_won": 4,
+      "defense_assisted_tackles": 99,
+      "defense_blocked_kicks": 1,
+      "defense_combined_tackles": 499,
+      "defense_forced_fumbles": 7,
+      "defense_fumbles_recovered": 7,
+      "defense_fumble_touchdowns": 0,
+      "defense_interceptions": 6,
+      "defense_interceptions_longest": 21,
+      "defense_interceptions_touchdowns": 1,
+      "defense_interceptions_yards": 49,
+      "defense_misc_assists": 0,
+      "defense_misc_combined_tackles": 4,
+      "defense_misc_forced_fumbles": 0,
+      "defense_misc_fumbles_recovered": 4,
+      "defense_misc_tackles": 4,
+      "defense_passes_defensed": 30,
+      "defense_quarterback_hit": 36,
+      "defense_sacks": 13,
+      "defense_sack_yards": 107,
+      "defense_safeties": 0,
+      "defense_safeties_1pt": 0,
+      "defense_special_teams_assists": 3,
+      "defense_special_teams_combined_tackles": 28,
+      "defense_special_teams_force_fumbles": 0,
+      "defense_special_teams_fumbles_recovered": 1,
+      "defense_special_teams_tackle": 25,
+      "defense _tackles": 400,
+      "defense_tackles_for_loss": 42,
+      "extra_point_attempts": 21,
+      "extra_points_blocked": 0,
+      "extra_point_made": 19,
+      "extra_point_pct": 90.476,
+      "field_goal_attempts": 10,
+      "field_goal_attempts_19": 0,
+      "field_goal_attempts_29": 5,
+      "field_goal_attempts_39": 2,
+      "field_goal_attempts_49": 2,
+      "field_goal_attempts_50": 1,
+      "field_goal_longest_yards": 46,
+      "field_goal_made": 8,
+      "field_goal_made_19": 0,
+      "field_goal_made_29": 5,
+      "field_goal_made_39": 1,
+      "field_goal_made_49": 2,
+      "field_goal_made_50": 0,
+      "field_goal_pct": 80.0,
+      "first_downs": 165,
+      "first_down_passes":99,"first_down_penalties":19,"first_down_rushes":47,"fourth_down_attempts":10,"fourth_down_conversions":7,"fourth_down_passes":6,"fourth_down_pct":70.0,"fourth_down_penalties":0,"fourth_down_rushes":1,"fumbles_forced":7,"fumbles":7,"fumbles_lost":2,"fumbles_out_of_bounds":1,"fumbles_opponent_recovered":8,"fumbles_opponent_recovered_touchdowns":0,"fumbles_opponent_recovered_yards":64,"fumbles_own_recovered":4,"fumbles_o
+      wn_recovered_touchdowns":0,"fumbles_own_recovered_yards":-6,"goal_to_go_attempts":18,"goal_to_go_pct":77.778,"goal_to_go_touchdowns":14,"kick_return_avg_yards":21.154,"kick_return_fair_catches":0,"kick_return_longest_yards":29,"kick_return_returns":13,"kick_return_touchdowns":0,"kick_return_yards":275,"kick_return_yards_10_plus":4,"kick_return_yards_20_plus":8,"kick_return_yards_30_plus":0,"kick_return_yards_40_plus":0,"kick_return_yards_50_plus":0,"kickoff_avg":65.135,"kickoff_avg_return_yards":69.769,"kickoff_endzone":29,"kickoff_inside_20":3,"kickoff_inside_20_pct":8.108,"kickoff_kicks":37,"kickoff_longest_yards":74,"kickoff_net_avg_yards":40.622,"kickoff_net_yards":1503,"kickoff_returns":13,"kickoff_return_yards":907,"kickoff_touchbacks":24,"kickoff_touchback_pct":64.865,"kickoff_yards":2410,"pass_attempts":290,"pass_avg_yards":6.462,"pass_completions":185,"pass_completion_avg_yards":10.13,"pass_completion_pct":63.793,"pass_first_downs": 102,
       "pass_interceptions": 7,
       "pass_interceptions_pct": 2.414,
       "pass_interceptions_touchdowns": 1,

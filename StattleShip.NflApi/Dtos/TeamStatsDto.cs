@@ -8,5 +8,7 @@ namespace StattleShip.NflApi.Dtos
 		[JsonProperty("teams")]
 		public List<TeamDto> Teams { get; set; }
 
+		[JsonProperty("leagues")]
+		public List<LeagueDto> Leagues { get; set; }
 	}
 }

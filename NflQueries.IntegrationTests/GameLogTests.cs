@@ -14,5 +14,14 @@ namespace NflQueries.IntegrationTests
 			Assert.IsNotNull(result);
 			Assert.IsTrue(result.Count > 0);
 		}
+
+		[TestMethod]
+		public void GameLogs_ForSeason2018_ReturnsTeamsDto()
+		{
+			var sut = new GameLogRequest();
+			var result = sut.LoadData(Constants.Seasons.Season2018);
+			Assert.IsNotNull(result);
+			Assert.IsTrue(result.Count > 0);
+		}
 	}
 }

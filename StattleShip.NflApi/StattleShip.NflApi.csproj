@@ -45,12 +45,21 @@
   <ItemGroup>
     <Compile Include="BaseNflApiRequest.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Dtos\GameDto.cs" />
     <Compile Include="Dtos\GameLogDto.cs" />
     <Compile Include="Dtos\GameLogsDto.cs" />
+    <Compile Include="Dtos\GameStatsDto.cs" />
+    <Compile Include="Dtos\InjuredPlayersDto.cs" />
+    <Compile Include="Dtos\InjuryDto.cs" />
     <Compile Include="Dtos\LeagueDto.cs" />
+    <Compile Include="Dtos\PlayerDto.cs" />
+    <Compile Include="Dtos\RosteredPlayersDto.cs" />
     <Compile Include="Dtos\TeamDto.cs" />
     <Compile Include="Dtos\TeamStatsDto.cs" />
     <Compile Include="GameLogRequest.cs" />
+    <Compile Include="GameRequest.cs" />
+    <Compile Include="InjuriesRequest.cs" />
+    <Compile Include="RosterRequest.cs" />
     <Compile Include="TeamsRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,7 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Sample JSON\games.json" />
     <None Include="Sample JSON\game_logs.json" />
+    <None Include="Sample JSON\roster.json" />
     <None Include="Sample JSON\team_stats_2018.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
