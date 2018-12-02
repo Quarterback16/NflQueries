@@ -9,27 +9,35 @@ namespace StattleShip.NflApi
 {
 	public class RosterRequest : BaseNflApiRequest
 	{
-		public List<PlayerDto> LoadData(string seasonSlug, string teamSlug = "")
+		public List<PlayerDto> LoadData(
+			string seasonSlug, 
+			string teamSlug = "")
 		{
-			var qp = new StringBuilder();
-			qp.Append($"season_id={seasonSlug}");
-			if (!string.IsNullOrEmpty(teamSlug)) qp.Append($"&team_id={teamSlug}");
-			qp.Append("&page=3");
-			var httpWebRequest = CreateRequest(
-				apiRequest: "rosters",
-				queryParms: qp.ToString());
-
-			var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-			using (var streamReader = new StreamReader(
-				httpResponse.GetResponseStream()))
+			Players = new List<PlayerDto>();
+			for (int p = 1; p < 4; p++)
 			{
-				var json = streamReader.ReadToEnd();
-				var dto = JsonConvert.DeserializeObject<RosteredPlayersDto>(
-					json);
+				var qp = new StringBuilder();
+				qp.Append($"season_id={seasonSlug}");
+				if (!string.IsNullOrEmpty(teamSlug))
+					qp.Append($"&team_id={teamSlug}");
+				qp.Append($"&page={p}");
+				var httpWebRequest = CreateRequest(
+					apiRequest: "rosters",
+					queryParms: qp.ToString());
+				var httpResponse 
+					= (HttpWebResponse)httpWebRequest.GetResponse();
 
-				Players = dto.Players;
+				using (var streamReader = new StreamReader(
+					httpResponse.GetResponseStream()))
+				{
+					var json = streamReader.ReadToEnd();
+					var dto = JsonConvert.DeserializeObject<RosteredPlayersDto>(
+						json);
+
+					Players.AddRange( dto.Players );
+				}
 			}
+
 			return Players;
 		}
 	}
