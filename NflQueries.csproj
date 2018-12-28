@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSharpFunctionalExtensions, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CSharpFunctionalExtensions.1.14.0\lib\net461\CSharpFunctionalExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlayerQuery.cs" />
+    <Compile Include="PlayerQueryHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NflQueries.Domain\NflQueries.Domain.csproj">
+      <Project>{9A3CD2D5-7C37-4DC3-B1D8-667816C10D18}</Project>
+      <Name>NflQueries.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="NflQueries.Interfaces\NflQueries.Interfaces.csproj">
+      <Project>{19D9F1D8-4198-4C02-ADC9-C40F0CDAAA9A}</Project>
+      <Name>NflQueries.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="StattleShip.NflApi\StattleShip.NflApi.csproj">
+      <Project>{8383FF73-8A66-41F1-879D-43D5E29CAE12}</Project>
+      <Name>StattleShip.NflApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

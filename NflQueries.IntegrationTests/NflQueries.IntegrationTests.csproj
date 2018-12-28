@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSharpFunctionalExtensions, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharpFunctionalExtensions.1.14.0\lib\net461\CSharpFunctionalExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,6 +55,14 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NflQueries.csproj">
+      <Project>{1d22ebce-f20c-4434-bf30-b7cc44141f13}</Project>
+      <Name>NflQueries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NflQueries.Domain\NflQueries.Domain.csproj">
+      <Project>{9A3CD2D5-7C37-4DC3-B1D8-667816C10D18}</Project>
+      <Name>NflQueries.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NflQueries.Models\NflQueries.Models.csproj">
       <Project>{C0CBF04D-EE02-4CBF-B2A3-D4AD3201FCC6}</Project>
       <Name>NflQueries.Models</Name>
@@ -60,6 +71,9 @@
       <Project>{8383FF73-8A66-41F1-879D-43D5E29CAE12}</Project>
       <Name>StattleShip.NflApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

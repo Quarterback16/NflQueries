@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StattleShip.NflApi;
+using System;
 
 namespace NflQueries.IntegrationTests
 {
@@ -39,7 +40,7 @@ namespace NflQueries.IntegrationTests
 		}
 
 		[TestMethod]
-		public void CheifsRoster_ForSeason2018_ReturnsDto()
+		public void ChiefsRoster_ForSeason2018_ReturnsDto()
 		{
 			var sut = new RosterRequest();
 			var result = sut.LoadData(
@@ -48,6 +49,22 @@ namespace NflQueries.IntegrationTests
 			Assert.IsNotNull(result);
 			Assert.IsTrue(result.Count > 0);
 			DumpPlayerDto(result);
+		}
+
+		[TestMethod]
+		public void PlayerQueryHandler_ReturnsPlayer()
+		{
+			var query = new PlayerQuery(
+				teamCode: "SF",
+				firstName: "Nick",
+				lastName: "Mullens");
+			var sut = new PlayerQueryHandler();
+			var result = sut.Handle(query);
+			Assert.IsNotNull(result);
+			Assert.IsTrue(result.IsActive);
+			Assert.AreEqual(
+				expected: new DateTime(1995,3,21),
+				actual: result.BirthDate);
 		}
 	}
 

@@ -9,6 +9,5 @@ namespace NflQueries.Domain
 		public DateTime BirthDate { get; set; }
 
 		public bool IsActive { get; set; }
-
 	}
 }

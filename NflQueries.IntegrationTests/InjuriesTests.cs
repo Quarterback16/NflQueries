@@ -13,7 +13,9 @@ namespace NflQueries.IntegrationTests
 			var result = sut.LoadData(
 				Constants.Seasons.Season2018);
 			Assert.IsNotNull(result);
-			Assert.IsTrue(result.Count > 0);
+			Assert.IsTrue(
+				condition: result.Count > 0,
+				message: "No Injuries returned");
 			foreach (var injury in result)
 			{
 				System.Console.WriteLine(injury.Status + " " + injury.Note);
