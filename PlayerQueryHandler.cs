@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using CSharpFunctionalExtensions;
 using NflQueries.Domain;
 using NflQueries.Interfaces;
 using StattleShip.NflApi;

@@ -50,5 +50,10 @@ namespace StattleShip.NflApi.Dtos
 		[JsonProperty("league_id")]
 		public string Leagueid { get; set; }
 
+		public override string ToString()
+		{
+			return $"{Name}:{NickName}:{Slug}";
+		}
+
 	}
 }

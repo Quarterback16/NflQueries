@@ -18,6 +18,5 @@ namespace NflQueries
 			FirstName = firstName;
 			LastName = lastName;
 		}
-
 	}
 }

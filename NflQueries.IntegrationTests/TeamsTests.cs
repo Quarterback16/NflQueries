@@ -31,6 +31,19 @@ namespace NflQueries.IntegrationTests
 			var result = sut.LoadData(Constants.Seasons.Season2018);
 			Assert.IsNotNull(result);
 			Assert.IsTrue(result.Count > 0);
+			foreach (var team in result)
+				System.Console.WriteLine(team);
+		}
+
+		[TestMethod]
+		public void Teams_ForSeason2019_ReturnsTeamsDto()
+		{
+			var sut = new TeamsRequest();
+			var result = sut.LoadData(Constants.Seasons.Season2019);
+			Assert.IsNotNull(result);
+			Assert.IsTrue(result.Count > 0);
+			foreach (var team in result)
+				System.Console.WriteLine(team);
 		}
 
 	}

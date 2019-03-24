@@ -66,6 +66,22 @@ namespace NflQueries.IntegrationTests
 				expected: new DateTime(1995,3,21),
 				actual: result.BirthDate);
 		}
+
+		[TestMethod]
+		public void PlayerQueryHandler_ReturnsPlayer2()
+		{
+			var query = new PlayerQuery(
+				teamCode: "SF",
+				firstName: "George",
+				lastName: "Kittle");
+			var sut = new PlayerQueryHandler();
+			var result = sut.Handle(query);
+			Assert.IsNotNull(result);
+			Assert.IsTrue(result.IsActive);
+			Assert.AreEqual(
+				expected: new DateTime(1993, 10, 9),
+				actual: result.BirthDate);
+		}
 	}
 
 }
